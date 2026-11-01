@@ -1,25 +1,20 @@
-# CSS Week 1 Assignment - Introduction to CSS3
+# CSS Week 2 — Advanced Selectors and Display
 
-This project is part of the **Introduction to CSS3** course (Web Design for Everybody Specialization by University of Michigan).
+This is the three-page Michigan walks assignment supplied by the course. The existing content, images, and instructor attribution are retained.
 
-## Overview
-A responsive, accessible three-page website sharing springtime walks in Michigan, styled using a single external stylesheet.
+## Changes
+- Every page includes a visible `Skip to Main Content` link to `main#main-content`.
+- The old `li` rule is commented out.
+- `nav` uses `display: inline-block` and `width: 80%`.
+- `nav img` uses a descendant selector and `width: 10%`.
+- The neighborhood gallery uses `.grid` with two 40% columns, `justify-content`, `align-items`, and `row-gap`.
+- `.grid img` uses `width: 100%` without changing flex gallery images.
+- The parks gallery uses `.flex`, `display: flex`, `flex-wrap`, and `justify-content`.
+- Links and keyboard focus have visible, contrasting styles.
 
-### Pages:
-- `index.html` - Home (Springtime in Michigan)
-- `neighborhood.html` - Neighborhood Walks
-- `parks.html` - Walks in the Park
+## Preview and submission
+Open `index.html`, `neighborhood.html`, and `parks.html` in a browser. Keep the existing `images/` folder.
 
-## CSS Requirements Implemented in `css/style.css`:
-- **Single Stylesheet**: Linked to all three HTML pages (`index.html`, `neighborhood.html`, `parks.html`).
-- **`body` rule**: Configured `font-family` and `font-size`.
-- **`header` rule**: Configured `background-color`.
-- **`nav` rule**: Configured `background-color`.
-- **`main` rule**: Configured `background-color` and `font-size`.
-- **`footer` rule**: Configured `background-color`.
-- **`li` rule**: Configured `display: inline-block` and `width`.
-- **`h1` rule**: Configured `text-align`, `font-family`, and `color`.
-- **`p` rule**: Configured `line-height`.
+After publishing this repository with GitHub Pages, verify the actual live URL before submitting. Coursera currently references a different project, `/tranhoangphu7/`; the repository's advertised Pages URL is `https://phudepzai-coder.github.io/Danang/`.
 
-## Accessibility (WAVE)
-Validated to pass WebAIM WAVE accessibility guidelines with high contrast ratios (WCAG AAA compliant colors) and proper semantic structure.
+Static checks are recorded in the accompanying verification report. Browser preview, WAVE, and W3C online validation still require a final check; do not treat static checks as a WAVE pass or a guaranteed peer-review score.

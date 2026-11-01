@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Stylesheet for WD4E Intro to CSS3 - Week 1 Assignment 1
+   Stylesheet for WD4E Intro to CSS3 - Week 2: Advanced Selectors and Display
    ========================================================================== */
 
 /* 1. Body: Modify font-family and font-size */
@@ -21,6 +21,8 @@ header {
 
 /* 3. Nav: Modify background-color */
 nav {
+  display: inline-block;
+  width: 80%;
   background-color: #203a4e;
   padding: 0.75rem 0;
   margin-bottom: 1rem;
@@ -33,12 +35,13 @@ nav ul {
   text-align: center;
 }
 
-/* 4. Li: Modify display and width properties */
+/* Week 1 li styling removed for Homework Two.
 li {
   display: inline-block;
   width: 30%;
   text-align: center;
 }
+*/
 
 nav a {
   color: #ffffff;
@@ -90,7 +93,7 @@ main a:focus {
 
 main div img {
   border-radius: 6px;
-  margin: 0.5rem;
+  margin: 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -105,4 +108,77 @@ footer {
 
 footer a {
   color: #004085;
+}
+/* Skip navigation works on every page, including keyboard focus. */
+.skip-link {
+  display: inline-block;
+  margin: 0.75rem 1rem;
+  padding: 0.6rem 0.9rem;
+  color: #ffffff;
+  background-color: #203a4e;
+  font-weight: 600;
+}
+
+nav ul {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  width: 85%;
+  vertical-align: middle;
+}
+
+nav img {
+  width: 10%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a:focus-visible {
+  outline: 3px solid #a34700;
+  outline-offset: 4px;
+}
+
+nav a:focus-visible {
+  outline-color: #ffeb99;
+}
+
+main:focus {
+  outline: 3px solid #203a4e;
+  outline-offset: 3px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-evenly;
+  align-items: center;
+  row-gap: 1.5rem;
+}
+
+.grid img {
+  width: 100%;
+  height: auto;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.flex img {
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  header { padding: 1rem 0.5rem; }
+  nav ul { width: 80%; gap: 0.75rem; }
+  main { margin: 1rem; padding: 1rem; }
+  h1 { font-size: 1.75rem; }
 }
